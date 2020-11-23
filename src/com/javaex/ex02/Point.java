@@ -1,24 +1,23 @@
 package com.javaex.ex02;
 
 public class Point {
+
+	private int x, y;
 	
-	private String name;
-	private int point;
-	
-	
-	public void setName(String p) {
-		name = p;
+	public void setX(int i) {
+		x = i;
 	}
 	
-	public String getName() {
-		return name;
+	public void setY(int i) {
+		y = i;
 	}
 	
-	public void setPoint(int i) {
-		point = i;
+	public int getX() {
+		return x;
 	}
 	
-	public int getPoint() {
-		return point;
+	public int getY() {
+		return y;
 	}
+	
 }
