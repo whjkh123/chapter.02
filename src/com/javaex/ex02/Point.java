@@ -2,7 +2,8 @@ package com.javaex.ex02;
 
 public class Point {
 
-	private int x, y;
+	private int x;
+	private int y;
 	
 	public void setX(int i) {
 		x = i;
@@ -20,4 +21,7 @@ public class Point {
 		return y;
 	}
 	
+	public void draw() {
+		System.out.println("점 [x = " + x + ", " + "y = " + y + "]을 그렸습니다.");
+	}
 }
