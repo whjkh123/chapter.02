@@ -37,29 +37,21 @@ public class Goodsaps {
 		System.out.println(camera.price);
 		*/
 		
-		camera.setName("니콘");
-		String name01 = camera.getName();
-		
-		camera.setPrice(400000);
-		int price01 = camera.getPrice();
+		camera.setName("니콘");		
+		camera.setPrice(400000);	
 		
 		camera.showInfo();
 		
-		computer.setName("LG그램");
-		String name02 = computer.getName();
-				
-		computer.setPrice(1000000);
-		int price02 = computer.getPrice();
+		computer.setName("LG그램");				
+		computer.setPrice(1000000);		
 		
 		computer.showInfo();
 		
-		cup.setName("머그컵");
-		String name03 = cup.getName();
-		
-		cup.setPrice(10000);
-		int price03 = cup.getPrice();
+		cup.setName("머그컵");		
+		cup.setPrice(10000);		
 		
 		cup.showInfo();
+		
 	}
 
 }
