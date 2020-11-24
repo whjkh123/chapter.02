@@ -21,6 +21,9 @@ public class Goods {
 		return price;
 	}
 	
-	
+	public void showInfo() {
+		System.out.println("상품이름: " + name);
+		System.out.println("가격: " + price);
+	}
 	
 }
