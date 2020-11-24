@@ -6,7 +6,7 @@ public class Goodsaps {
 		
 		Goods camera = new Goods();
 		Goods computer = new Goods();
-		Goods cup = new Goods();
+		Goods cup = new Goods("머그컵", 10000);
 		
 		/*
 		camera.name = "니콘";
@@ -45,10 +45,7 @@ public class Goodsaps {
 		computer.setName("LG그램");				
 		computer.setPrice(1000000);		
 		
-		computer.showInfo();
-		
-		cup.setName("머그컵");		
-		cup.setPrice(10000);		
+		computer.showInfo();		
 		
 		cup.showInfo();
 		
