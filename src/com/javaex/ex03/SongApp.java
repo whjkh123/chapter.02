@@ -6,7 +6,7 @@ public class SongApp {
 		
 		Song Iu = new Song();
 		Song Gd = new Song();
-		Song Bk = new Song();
+		Song Bk = new Song("벚꽃엔딩", "버스커버스커", "버스커버스커 1집", "장범준", 2012, 4);
 		
 		Iu.setTitle("좋은날");		
 		Iu.setArtist("아이유");		
@@ -25,14 +25,7 @@ public class SongApp {
 		Gd.setTrack(2);
 		
 		Gd.showInfo();
-		
-		Bk.setTitle("벚꽃엔딩");		
-		Bk.setArtist("버스커버스커");		
-		Bk.setAlbum("버스커버스커 1집");		
-		Bk.setComposer("장범준");		
-		Bk.setYear(2012);		
-		Bk.setTrack(4);
-		
+				
 		Bk.showInfo();
 
 	}
