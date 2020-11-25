@@ -36,7 +36,7 @@ public class TV {
 		this.channel = channel;
 		if (channel > 255) {
 			this.channel = 255;
-		} else if (channel < 1) {
+		} else{
 			this.channel = 1;
 		}
 	}
@@ -53,7 +53,7 @@ public class TV {
 		this.volume = volume;
 		if (volume > 100) {
 			this.volume = 100;
-		} else if (volume < 0) {
+		} else{
 			this.volume = 0;
 		}
 	}
