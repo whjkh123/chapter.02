@@ -26,7 +26,12 @@ public class Song {
 		this.title = title;
 		this.artist = artist;
 	}
-
+	/*
+	public Song(String title, String composer) {
+		this.title = title;
+		this.composer = composer;
+	}
+	*/
 	public Song(String title, int year) {
 		this.title = title;
 		this.year = year;
