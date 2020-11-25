@@ -11,10 +11,12 @@ public class PointApp {
 		
 		p1.setX(5);
 		p1.setY(5);
+		
 		p1.draw();
 		
 		p2.setX(10);
 		p2.setY(23);
+		
 		p2.draw();
 		
 		p3.draw();
