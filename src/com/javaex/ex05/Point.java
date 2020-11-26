@@ -8,7 +8,7 @@ public class Point {
 	public Point() {
 
 	}
-
+	
 	public Point(int x, int y) {
 		this.x = x;
 		this.y = y;
@@ -37,6 +37,14 @@ public class Point {
 	public void draw() {
 		System.out.println("[x = " + x + ", " + "y = " + y + "]");
 		
+	}
+	
+	public void draw(boolean opt) {
+		if(opt == true) {
+			System.out.println("[x = " + x + ", " + "y = " + y + "]을 그렸습니다.");
+		}else {
+			System.out.println("[x = " + x + ", " + "y = " + y + "]을 지웠습니다.");
+		}
 	}
 
 }

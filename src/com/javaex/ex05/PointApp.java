@@ -7,6 +7,7 @@ public class PointApp {
 		Point p1 = new Point();
 		Point p2 = new Point(11, 3);
 		Point p3 = new Point(12);
+		Point p4 = new Point(100, 100);
 		
 		p1.setX(19);
 		p1.setY(92);
@@ -16,6 +17,9 @@ public class PointApp {
 		
 		p3.setY(25);
 		p3.draw();
+		
+		p4.draw(true);
+		p4.draw(false);
 		
 	}
 }

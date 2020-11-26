@@ -13,30 +13,34 @@ public class Song {
 
 	}
 
-	public Song(String title, String artist, String album, String composer, int year, int track) {
+	public Song(String title, int track) {
 		this.title = title;
+		if (track < 0) {
+			this.track = 0;
+		} else {
+			this.track = track;
+		}
+		System.out.println("생성자(2)");
+	}
+
+	public Song(String title, String artist, String album, String composer, int year, int track) {
+		this(title, track);
 		this.artist = artist;
 		this.album = album;
 		this.composer = composer;
 		this.year = year;
-		this.track = track;
+		System.out.println("생성자(6)");
 	}
 
 	public Song(String title, String artist) {
 		this.title = title;
 		this.artist = artist;
 	}
-	/*
-	public Song(String title, String composer) {
-		this.title = title;
-		this.composer = composer;
-	}
-	*/
-	public Song(String title, int year) {
-		this.title = title;
-		this.year = year;
-	}
 
+	/*
+	 * public Song(String title, String composer) { this.title = title;
+	 * this.composer = composer; }
+	 */
 	public String getTitle() {
 		return title;
 	}
@@ -92,9 +96,8 @@ public class Song {
 
 	@Override
 	public String toString() {
-		System.out.println(artist + ", " + title + "(" + album + ", " + year + "년, " + track + "번 track, " + composer
-				+ " 작곡" + ")");
-		return super.toString();
+		return "Song [title=" + title + ", artist=" + artist + ", album=" + album + ", composer=" + composer + ", year="
+				+ year + ", track=" + track + "]";
 	}
 
 }

@@ -36,13 +36,15 @@ public class TV {
 		this.channel = channel;
 		if (channel > 255) {
 			this.channel = 255;
-		} else{
+		} else if (channel < 1) {
 			this.channel = 1;
 		}
 	}
 
-	public void channel(boolean channel) {
-		if (channel) {
+	public void channel(boolean up) {
+		if (channel == 255) {
+			this.channel = 255;
+		} else if (up) {
 			this.channel++;
 		} else {
 			this.channel--;
@@ -53,13 +55,15 @@ public class TV {
 		this.volume = volume;
 		if (volume > 100) {
 			this.volume = 100;
-		} else{
+		} else if (volume < 0) {
 			this.volume = 0;
 		}
 	}
 
-	public void volume(boolean volume) {
-		if (volume) {
+	public void volume(boolean up) {
+		if (volume == 100) {
+			this.volume = 100;
+		} else if (up) {
 			this.volume++;
 		} else {
 			this.volume--;
