@@ -1,4 +1,4 @@
-package com.javaex.ex12;
+package com.javaex.ex15;
 
 public class Student extends Person {
 

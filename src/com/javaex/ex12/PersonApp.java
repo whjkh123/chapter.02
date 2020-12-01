@@ -28,6 +28,30 @@ public class PersonApp {
 		
 		Student p05 = new Student("제주고등학교");
 		
+		Person[] pArray = new Person[3];
+				
+		Person p01 = new Person("둘리", 1203);
+		Person p02 = new Person("도우너", 300);
+		Person p03 = new Person("마이콜", 200);
+		pArray[0] = p01;
+		pArray[1] = p02;
+		pArray[2] = p03;
+		for(int i = 0; i < pArray.length; i++) {
+			pArray[i].showInfo();
+		}
+				
+		Student[] sArray = new Student[3];
+		
+		Student s01 = new Student("유재석", 49, "서울고등학교");
+		Student s02 = new Student("이효리", 44, "제주고등학교");
+		Student s03 = new Student("박명수", 51, "군산고등학교");
+		sArray[0] = s01;
+		sArray[1] = s02;
+		sArray[2] = s03;
+		for(int i = 0; i < sArray.length; i++) {
+			sArray[i].showInfo();
+		}
+		
 	}
 
 }
