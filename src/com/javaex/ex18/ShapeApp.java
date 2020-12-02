@@ -18,6 +18,8 @@ public class ShapeApp {
 			cArr[i].area();
 		}
 
+		System.out.println("=======================================");
+
 		Ractangle r01 = new Ractangle("주황", "빨강", 92, 19);
 		Ractangle r02 = new Ractangle("초록", "노랑", 3, 11);
 		Ractangle r03 = new Ractangle("보라", "파랑", 2, 12);
@@ -32,6 +34,8 @@ public class ShapeApp {
 			rArr[i].area();
 		}
 
+		System.out.println("=======================================");
+
 		Triangle t01 = new Triangle("파랑", "보라", 12, 2);
 		Triangle t02 = new Triangle("노랑", "초록", 11, 3);
 		Triangle t03 = new Triangle("빨강", "주황", 19, 92);
@@ -44,6 +48,22 @@ public class ShapeApp {
 		for (int i = 0; i < tArr.length; i++) {
 			tArr[i].draw();
 			tArr[i].area();
+		}
+
+		System.out.println("=======================================");
+
+		Shape a01 = new Circle("빨강", "주황", 19);
+		Shape a02 = new Ractangle("노랑", "초록", 92, 11);
+		Shape a03 = new Triangle("파랑", "보라", 3, 12);
+
+		Shape[] allArr = new Shape[3];
+		allArr[0] = a01;
+		allArr[1] = a02;
+		allArr[2] = a03;
+
+		for (int i = 0; i < allArr.length; i++) {
+			allArr[i].draw();
+			allArr[i].area();
 		}
 
 	}
