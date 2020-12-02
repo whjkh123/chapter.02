@@ -48,10 +48,6 @@ public class ShapeApp {
 
 		System.out.println("=======================================");
 
-		
-		
-		System.out.println("=======================================");
-
 		Shape s01 = new Ractangle("빨강", "노랑", 5, 10);
 		Shape s02 = new Circle("빨강", "노랑", 5);
 
