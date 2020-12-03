@@ -1,14 +1,14 @@
-package com.javaex.ex18;
+package com.javaex.ex19;
 
-public class Triangle extends Shape {
+public class Ractangle extends Shape implements Drawable {
 
 	private int width, height;
 
-	public Triangle() {
+	public Ractangle() {
 
 	}
 
-	public Triangle(String fillColor, String lineColor, int width, int height) {
+	public Ractangle(String fillColor, String lineColor, int width, int height) {
 		super(fillColor, lineColor);
 		this.width = width;
 		this.height = height;
@@ -31,11 +31,11 @@ public class Triangle extends Shape {
 	}
 
 	public void draw() {
-		System.out.println("삼각형  가로: " + width + "  세로: " + height + "  면색: " + fillColor + "  선색: " + lineColor);
+		System.out.println("사각형" + "  가로: " + width + "  세로: " + height + "  면색: " + fillColor + "  선색: " + lineColor);
 	}
 
 	public double area() {
-		double area = width * height / 2;
+		double area = width * height;
 		System.out.println("면적: " + area);
 		System.out.println("---------------------------------------");
 		return area;

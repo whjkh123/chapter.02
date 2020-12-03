@@ -1,6 +1,6 @@
-package com.javaex.ex18;
+package com.javaex.ex19;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape implements Drawable {
 
 	private int width, height;
 
@@ -31,7 +31,7 @@ public class Triangle extends Shape {
 	}
 
 	public void draw() {
-		System.out.println("삼각형  가로: " + width + "  세로: " + height + "  면색: " + fillColor + "  선색: " + lineColor);
+		System.out.println("삼각형" + "  가로: " + width + "  세로: " + height + "  면색: " + fillColor + "  선색: " + lineColor);
 	}
 
 	public double area() {

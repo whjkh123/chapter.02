@@ -31,7 +31,7 @@ public class Ractangle extends Shape {
 	}
 
 	public void draw() {
-		System.out.println("사각형" + "  가로: " + width + "  세로: " + height + "  면색: " + fillColor + "  선색: " + lineColor);
+		System.out.println("사각형  가로: " + width + "  세로: " + height + "  면색: " + fillColor + "  선색: " + lineColor);
 	}
 
 	public double area() {

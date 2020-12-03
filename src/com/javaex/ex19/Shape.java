@@ -1,6 +1,6 @@
-package com.javaex.ex18;
+package com.javaex.ex19;
 
-public abstract class Shape {
+public abstract class Shape implements Drawable {
 
 	protected String fillColor, lineColor;
 
@@ -29,7 +29,7 @@ public abstract class Shape {
 		this.lineColor = lineColor;
 	}
 
-	public abstract void draw();
+	// public abstract void draw(); >> Drawable 인터페이스에서 실행할 계획이므로 삭제
 
 	public abstract double area();
 

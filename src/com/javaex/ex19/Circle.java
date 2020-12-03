@@ -1,6 +1,6 @@
-package com.javaex.ex18;
+package com.javaex.ex19;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Drawable {
 
 	private int radius;
 
@@ -22,7 +22,7 @@ public class Circle extends Shape {
 	}
 
 	public void draw() {
-		System.out.println("원  반지름: " + radius + "  면색: " + fillColor + "  선색: " + lineColor);
+		System.out.println("원" + "  반지름: " + radius + "  면색: " + fillColor + "  선색: " + lineColor);
 	}
 
 	public double area() {
